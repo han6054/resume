@@ -23,12 +23,10 @@
         enableHtml: false,
         fullStyle: [
           `/*
-* Inspired by http://strml.net/
-* 大家好，我是方方 
-* 二月了，好多公司都在招聘，你是不是也在准备简历呀。
-* 说做就做，我也来写一份简历！
+* 一个人只拥有此生此世是不够的,他还应该拥有诗意的世界。
+* 我是韩佳骏
+* 我热爱前端，热爱学习 希望在这条路上不断进步！
 */
-
 /* 首先给所有元素加上过渡效果 */
 * {
   -webkit-transition: all .3s;
@@ -36,7 +34,7 @@
 }
 /* 白色背景太单调了，我们来点背景 */
 html {
-  color: rgb(222,222,222); background: rgb(0,43,54); 
+  color: rgb(222,222,222); background: rgb(0,43,54);
 }
 /* 文字离边框太近了 */
 .styleEditor {
@@ -58,8 +56,8 @@ html{
           perspective: 1000px;
 }
 .styleEditor {
-  position: fixed; left: 0; top: 0; 
-  -webkit-transition: none; 
+  position: fixed; left: 0; top: 0;
+  -webkit-transition: none;
   transition: none;
   -webkit-transform: rotateY(10deg) translateZ(-100px) ;
           transform: rotateY(10deg) translateZ(-100px) ;
@@ -69,7 +67,7 @@ html{
 .resumeEditor{
   position: fixed; right: 0; top: 0;
   padding: .5em;  margin: .5em;
-  width: 48vw; height: 90vh; 
+  width: 48vw; height: 90vh;
   border: 1px solid;
   background: white; color: #222;
   overflow: auto;
@@ -106,8 +104,8 @@ html{
   counter-reset: section;
 }
 .resumeEditor ol li::before {
-  counter-increment: section;            
-  content: counters(section, ".") " ";  
+  counter-increment: section;
+  content: counters(section, ".") " ";
   margin-right: .5em;
 }
 .resumeEditor blockquote {
@@ -117,34 +115,50 @@ html{
 }
 `],
         currentMarkdown: '',
-        fullMarkdown: `方应杭
-----
+        fullMarkdown: `
 
-资深前端工程师，资深前端讲师，现在在 [饥人谷](http://jirengu.com) 教前端课程。
+韩佳骏
+----
+* 邮箱：424681370@qq.com
+* 微信：hanjiajunyy
 
 技能
 ----
 
-* 前端开发
-* Rails 开发
-* Node.js 开发
-* 前端授课
+* 原生javascript,JQ,css3,html5
+* 数据交互
+* 熟悉Vuejs的使用、Web组件化开发、灵活运用组件间通信
+
 
 工作经历
 ----
+1.北京链动数据有限公司
 
-1. [饥人谷](http://jirengu.com)
-2. 腾讯即时通讯平台部
-3. 阿里巴巴B2B部门
-4. 彩程知人项目组
 
-链接
+2.北京枞树科技公司
+
+工作主要职责
 ----
+一 .公司产品主线的开发，公司网站的迭代和功能的完善（包括数据交互和js交互）
 
-* [GitHub](https://github.com/frankfang)
-* [我的文章](https://www.zhihu.com/people/zhihusucks/pins/posts)
 
-> 如果你喜欢这个效果，Fork [我的项目](https://github.com/jirengu-inc/animating-resume)，打造你自己的简历！
+二 .每周大约1~2个专题页面的开发，其中包含：
+
+
+1.PC端：实现js效果 包括运用一些插件（fullpage,roundabout...等）
+2.移动端：主要运动swiper开发，必要时运用原声toouch事件写一些效果
+
+作品摘要
+----
+移动端
+
+* [上海车展专题](http://news.cheshi.com/special/201704/sh_car/)
+* [冰雪试专题](http://news.cheshi.com/special/201612/cheshi_snow2/)
+
+
+PC端
+* [宝沃专题](http://news.cheshi.com/special/201612/borgward/)
+* [东南汽车](http://news.cheshi.com/special/201611/dongnanDX3/)
 
 `
       }
@@ -225,11 +239,11 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   html {
     min-height: 100vh;
   }
-  
+
   * {
     -webkit-transition: all .3s;
     transition: all .3s;

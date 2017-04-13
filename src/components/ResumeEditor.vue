@@ -20,7 +20,7 @@
         this.$refs.container.scrollTop = 100000
       }
     }
-  }
+   }
 
 </script>
 
@@ -28,7 +28,7 @@
   .htmlMode {
     animation: flip 2s;
   }
-  
+
   @keyframes flip {
     from {
       opacity: 0;
