@@ -2,6 +2,6 @@
 
 > This is my resume
 
-[预览](https://github.com/han6054/resume/dist)
+[预览](https://han6054.github.io/resume/dist/)
 
 
